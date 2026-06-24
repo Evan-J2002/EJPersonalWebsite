@@ -15,5 +15,13 @@ import Navigation from '../components/navigation.astro';
     <Navigation />
     <h1>Welcome!</h1>
     <p>This is still a work in progress, but it's coming along!</p>
+    <script>
+      const menu = document.querySelector('.menu');
+
+      menu?.addEventListener('click', () => {
+        const isExpanded = menu.getAttribute('aria-expanded') === 'true';
+        menu.setAttribute('aria-expanded', `${!isExpanded}`);
+      });
+    </script>
   </body>
 </html>
