@@ -2,7 +2,7 @@
 import '../styles/global.css';
 import Navigation from '../components/navigation.astro';
 import {Image} from 'astro:assets';
-import me from 'C:\Users\Owner\extinct-event\src\assets\Formal_Photo_1.jpg';
+import me from 'C:\Users\Owner\extinct-event\src\assets\photoofme.jpg';
 ---
 
 <html lang="en"> 
@@ -20,9 +20,6 @@ import me from 'C:\Users\Owner\extinct-event\src\assets\Formal_Photo_1.jpg';
     <script>
       import "../scripts/menu.js";
     </script>
-     <img src="/assets/Formal_Photo_1.jpg" alt="Me!" width="50" height="50" />
+    <img src="/assets/photoofme.jpg" alt="Me!" width="50" height="50" />
   </body>
-  <img src={me.src} alt="A bird sitting on a nest of eggs.">
-  <img src="/assets/Formal_Photo_1.jpg" alt="A bird.">
-  <img src="https://example.com/remote-bird.jpg" alt="A bird.">
 </html>
