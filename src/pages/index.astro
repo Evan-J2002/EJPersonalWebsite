@@ -1,25 +1,16 @@
 ---
-import '../styles/global.css';
-import Navigation from '../components/navigation.astro';
-import {Image} from 'astro:assets';
-import me from 'C:\Users\Owner\extinct-event\src\assets\photoofme.jpg';
+import Layout from "@/layouts/Layout.astro";
+import Nav from "@/components/nav.astro";
+import Home from "@/components/home.astro";
+import Projects from "@/components/projects.astro";
+import Contact from "@/components/contact.astro";
+import Footer from "@/components/footer.astro";
 ---
 
-<html lang="en"> 
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} >
-    <title>Home Page</title>
-  </head>
-  <body>
-    <Navigation />
-    <h1>Welcome!</h1>
-    <img src="/assets/photoofme.jpg" alt="Me!" width="500" height="500" />
-    <p>This is still a work in progress, but it's coming along!</p>
-    <script>
-      import "../scripts/menu.js";
-    </script>
-  </body>
-</html>
+<Layout title="Evan James">
+  <Nav />
+  <Home />
+  <Projects />
+  <Contact />
+  <Footer />
+</Layout>
